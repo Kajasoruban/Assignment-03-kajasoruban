@@ -5,14 +5,16 @@ var logcol=document.getElementById("logofun");
 
 
 function modeChange(imgs){
-    if(imgs=="http://127.0.0.1:5500/Assets/img/Icons/moon(dark).svg"){
+    if(imgs.match(/moon/i)){
         modes.src="Assets/img/Icons/sun.svg";
     }else{
         modes.src="Assets/img/Icons/moon(dark).svg";
     }
-    
+    console.log(imgs);
     
     bgcolor.classList.toggle("importand");
     logcol.classList.toggle("logocol2");
     
 }
+
+
