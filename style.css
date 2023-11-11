@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -9,14 +9,14 @@
 
 .importand{
     color: white !important;
-    background-color: black !important;
+    background-color: #0f1313 !important;
 }
 .importand nav a{
     color: white;
 }
 
 .importand nav{
-    background: #000;
+    background: #0f1313;
 }
 
 /* end mode */
@@ -40,7 +40,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    
     background:white;
 }
 
@@ -104,6 +104,8 @@ nav ul li{
     nav span{
         font-size: 1rem;
     }
+    
+    
 
   }
 
@@ -137,7 +139,7 @@ nav ul li{
     }
     .blankon{
         width: 100vw;
-        height: 46vh;
+        height: 48vh;
     }
     
 
@@ -150,15 +152,23 @@ nav ul li{
 /* carousel start */
 .container{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     border: 1px solid black;
+}
+.carousels{
+    width: 80vw;
+    height: 40vh;
+    margin: 3rem auto auto;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel{
     border: 1px solid black;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+    width: 80vw;
+    height: 40vh;
+
+    
     display: flex;
     justify-content: space-between;
 
@@ -168,17 +178,171 @@ nav ul li{
     width: 50%;
     height: 100%;
 }
+.image1{
+    position: relative;
+}
 
 .image1 img{
     width: 50%;
+    height: 90%;
+    min-width: 300px;
+    height: 250px;
     border: 1px solid black;
-    margin-left: 25%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
      
 }
 
+.content1 h1{
+    font-size: 3.5rem;
+
+}
+.content1 p{
+    
+    font-weight: 100;
+
+}
+.content1 button{
+    background: #155739;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content1{
+    position: relative;
+}
+.content1 a{
+    position: absolute;
+    bottom: 0rem;
+    /* left: 100%; */
+    scroll-behavior: smooth;
+    
+    text-decoration: none;
+}
+.content2 a{
+    scroll-behavior: smooth;
+}
+
+/* for 2nd silde section */
+.carousel2{
+    border: 1px solid black;
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.carousel2 div{
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+}
+.image2{
+    position: relative;
+}
+
+.image2 img{
+    width: 70%;
+    height: 90%;
+    min-width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+     
+}
+
+.content2 h2{
+    font-weight: lighter;
+
+}
+
+.content2 h1{
+    font-size: 3.5rem;
+
+}
+.content2 p{
+    
+    font-weight: 100;
+
+}
+.content2 button{
+    background: #4dc529;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    .content1 h1{
+        font-size: 2.5rem;
+    
+    }
+}
 @media only screen and (max-width: 600px){
+    
+    .container{
+        height: 80vh;
+    }
+    .carousels{
+        
+        height: 60vh;
+    }
     .carousel{
         flex-direction: column;
+        height: 60vh;
+    }
+    .carousel div{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+
+    }
+    .image1 img{
+        width: 60%;
+        height: 100%;
+    }
+    .content1 h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* start of home 2 */
+    .carousel2{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .carousel2 div{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+
+    }
+    .image2 img{
+        width: 60%;
+        height: 100%;
+    }
+    .content2 h1{
+        font-size: 2rem;
+        text-align: center;
     }
 
 }
