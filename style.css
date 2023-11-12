@@ -19,6 +19,17 @@
     background: #0f1313;
 }
 
+.importand .active{
+    color: #155739;
+    border-bottom: 2px solid #155739 ;
+}
+.importand .product-title button{
+    background-color: #0f1313;
+    color: white;
+}
+.importand .card img{
+    filter: saturate(3);
+}
 /* end mode */
 
 
@@ -31,7 +42,12 @@
 /* end responsive nav */
 
 /* nav bar section start */
-
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 nav{
     border: 1px solid black;
     width:100vw;
@@ -43,6 +59,12 @@ nav{
     
     background:white;
 }
+
+.active{
+    color: #155739;
+    border-bottom: 2px solid #155739 ;
+}
+
 
 nav a{
     text-decoration: none;
@@ -92,6 +114,9 @@ nav ul li{
      cursor: pointer;
     /* border: 1px solid black; */
 }
+.ullc a:hover{
+    color: #155739;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -112,7 +137,9 @@ nav ul li{
   @media only screen and (max-width: 600px) {
     nav {
       
-      display: fixed;
+      position: fixed;
+      top: 0;
+      left: 0;
 
     }
     nav ul{
@@ -125,10 +152,17 @@ nav ul li{
         left: -20%;
         display: none;
     }
-    nav .ullc{
-        display: flex;
+    .importand nav .ullc{
+        background-color: #0f1313;
 
     }
+    nav .ullc{
+        display: flex;
+        background-color: white;
+        
+
+    }
+    
     nav .men{
         translate: 65vw;
     }
@@ -142,8 +176,6 @@ nav ul li{
         height: 48vh;
     }
     
-
-
   }
 
 
@@ -161,6 +193,7 @@ nav ul li{
     margin: 3rem auto auto;
     overflow: hidden;
     position: relative;
+    cursor: grab;
 }
 
 .carousel{
@@ -185,7 +218,7 @@ nav ul li{
 .image1 img{
     width: 50%;
     height: 90%;
-    min-width: 300px;
+    min-width: 350px;
     height: 250px;
     border: 1px solid black;
     margin: 0 auto;
@@ -215,20 +248,8 @@ nav ul li{
     font-weight: bold;
     cursor: pointer;
 }
-.content1{
-    position: relative;
-}
-.content1 a{
-    position: absolute;
-    bottom: 0rem;
-    /* left: 100%; */
-    scroll-behavior: smooth;
-    
-    text-decoration: none;
-}
-.content2 a{
-    scroll-behavior: smooth;
-}
+
+
 
 /* for 2nd silde section */
 .carousel2{
@@ -292,10 +313,26 @@ nav ul li{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
     .content1 h1{
         font-size: 2.5rem;
     
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .content1 h1{
+        font-size: 2rem;
+    
+    }
+    .content1 p{
+        font-size: 0.8rem;
+    }
+    .image1 img{
+        min-width: 250px;
+    }
+    .content2 h1{
+        font-size: 2.4rem;
     }
 }
 @media only screen and (max-width: 600px){
@@ -325,6 +362,13 @@ nav ul li{
         font-size: 2rem;
         text-align: center;
     }
+    .content1 p{
+        font-size: 1rem;
+    }
+    .image1 img{
+        min-width: 300px;
+    }
+    
     /* start of home 2 */
     .carousel2{
         flex-direction: column;
@@ -346,3 +390,212 @@ nav ul li{
     }
 
 }
+
+/* end of carousel */
+
+.space{
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+/* start of zoomimage */
+
+.container2{
+    width: 100vw;
+    height: 60vh;
+    border: 1px solid black;
+}
+
+.zoom{
+    border: 1px solid black;
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.zoom div{
+    border: 1px solid black;
+    width: 40vw;
+    height: 100%;
+}
+.zoomimg{
+    overflow: hidden;
+}
+.zoomimg img{
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    cursor: zoom-in;
+    
+}
+.zoomin{
+    min-width: 700px;
+    min-height: 400px;
+    object-fit: none;
+    object-position: -5rem -10rem;
+    cursor: zoom-out !important;
+}
+
+.zoomcontent h2{
+    font-size: 3rem;
+}
+
+.zoomcontent ul{
+   list-style-type: none;
+}
+.zoomcontent span{
+    
+    color: #155739;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1000px){
+    .zoom ul{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .zoomcontent h2{
+        font-size: 2rem;
+    }
+    .zoomcontent {
+        font-size: 1rem;
+    }
+    .zoomin{
+        min-width: 300px;
+        min-height: 300px;
+        object-fit: none;
+        object-position: -10rem -10rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .container2{
+        height: 80vh;
+    }
+    .zoom{
+        height: 80vh;
+        flex-direction: column;
+    }
+    .zoom div{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .zoom ul{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    .zoomcontent h2{
+        font-size: 1.5rem;
+    }
+    .zoomcontent {
+        font-size: 1rem;
+    }
+    .zoomin{
+        min-width: 300px;
+        min-height: 300px;
+        object-fit: none;
+        object-position: -10rem -20rem;
+    }
+    
+}
+
+/* end of zoomimg */
+
+/* start of product */
+.container3{
+    width: 100vw;
+    
+    border: 1px solid black;
+}
+.product-align{
+    width: 80vw;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.product-title{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.product-title h1{
+    font-size: 2rem;
+    display: inline;
+    font-weight: bold;
+}
+
+.product-title hr{
+    
+    display: inline-block;
+    color: #4dc529;
+    width: 5vw;
+    margin: 0.5rem;
+    border: 1px solid ;
+    
+}
+
+.product-title button{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    /* border: 0.5px thin rgb(143, 130, 130) ; */
+    background-color: white;
+    color: #383a37;
+    border-radius: 5px;
+}
+
+.active2{
+    border: 2px dotted #4dc529 !important;
+    color: #4dc529 !important;
+}
+.card.hide{
+    display: none;
+}
+.products{
+    display: flex;
+    margin-top: 30px;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.card{
+    flex-basis: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+    
+}
+
+.card img{
+    
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+}
+.card-content{
+    border: 1px solid black;
+}
+.card-content h6{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.card-content p{
+    color: #4dc529;
+}
+@media only screen and (max-width: 600px){
+    .card{
+        flex-basis: 300px;
+
+    }
+    .card img{
+        width: 80%;
+    }
+    .products{
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+}
+/* end of product */

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="bodyc">
+
+    <div class="space"></div>
+
     <!-- start nav bar -->
 
     <section class="navbar">
@@ -14,8 +17,8 @@
         <span><i id="logo"><img src="Assets/img/Icons/favicon.png" id="logofun" class="logocol" alt="logo"></i>PLANTEX</span>
             <i><img src="Assets/img/Icons/menu.svg" id="menu"alt="" onclick="menu()"></i>
             <ul id="ull">
-                <li><a id="linkc" href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a id="linkc" class="active" href="">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">FAQs</a></li>
                 <li><a href="">Contact Us</a></li>
@@ -46,7 +49,7 @@
                     <p>Create incredible plant design for your offices or appartments. Add freshness to your new ideas</p>
                     <br>
                     <button>Explore ↘</button>
-                    <a href="#card2">0</a>
+                    
                 </div>
                 <div class="image1">
                     <img src="Assets/img/home.png" alt="">
@@ -63,7 +66,7 @@
                     <p>Pronia,With 100% Natural,Organic & Plant Shop.</p>
                     <br>
                     <button>DISCOVER NOW</button>
-                    <a href="#card1">0</a>
+                    
                 </div>
                 <div class="image2">
                     <img src="Assets/img/home2.png" alt="">
@@ -75,6 +78,141 @@
 
  
     </div><!-- end carousel -->
+
+
+    <div class="space"></div>
+
+
+    <!-- start zoom image -->
+
+    <div class="container2" id="about">
+        <div class="zoom">
+
+            <div class="zoomimg">
+                <img src="Assets/img/about.png" id="zing" onclick="zoom(this)" alt="about">
+
+            </div>
+
+            <div class="zoomcontent">
+                <h2>Who we really are & why choose us</h2>
+                <br>
+                <p>We have over 4000+ unbiased reviews and our customers trust our plant process and delivery service every time</p>
+                <br>
+                <ul>
+                    <li>✅ We always deliver on time</li>
+                    <li>✅ We give you guides to protect and care for your plants</li>
+                    <li>✅ We always come over for a check0up after sale</li>
+                    <li>✅ 100% money back guaranteed</li>
+                </ul>
+                <br><br>
+                <span>Shop Now ↘</span>
+
+
+            </div>
+
+
+        </div>
+
+    </div><!-- end zoom image -->
+    <div class="space"></div>
+
+    <!-- start of product -->
+    <div id="product" class="container3">
+        
+
+        <div class="product-title">
+            <hr><h1>OUR PRODUCTS</h1><hr>
+            <br><br>
+            <button data-name="featured" class="active2">Featured</button>
+            <button data-name="best">Bestseller</button>
+            <button data-name="latest">Latest</button>
+        </div>
+
+        <div class="product-align"><!-- start of products-align -->
+
+        <div class="products"><!-- start of products -->
+
+            <div class="card" data-name="best">
+                <img src="Assets/img/Capture6-removebg-preview.png" alt="card1">
+                <div class="card-content">
+                    <h6 class="card-title">American Marigold</h6>
+                    <p class="card-description">$23.45 <br>⭐⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="latest">
+                <img src="Assets/img/Capture11-removebg-preview.png" alt="card2">
+                <div class="card-content">
+                    <h6 class="card-title">Blacked Eyed Susan</h6>
+                    <p class="card-description">$25.45 <br>⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="latest">
+                <img src="Assets/img/Capture12-removebg-preview.png" alt="card3">
+                <div class="card-content">
+                    <h6 class="card-title">Blacked Eyed Susan</h6>
+                    <p class="card-description">$30.45 <br>⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="best">
+                <img src="Assets/img/Capture7-removebg-preview.png" alt="card4">
+                <div class="card-content">
+                    <h6 class="card-title">Bloody Cranesbill</h6>
+                    <p class="card-description">$45.00 <br>⭐⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="latest">
+                <img src="Assets/img/Capture10-removebg-preview.png" alt="card5">
+                <div class="card-content">
+                    <h6 class="card-title">Butterfly Weed</h6>
+                    <p class="card-description">$50.45 <br>⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="best">
+                <img src="Assets/img/home2.png" alt="card6">
+                <div class="card-content">
+                    <h6 class="card-title">Common Yarrow</h6>
+                    <p class="card-description">$65.00 <br>⭐⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="best">
+                <img src="Assets/img/Capture8-removebg-preview.png" alt="card7">
+                <div class="card-content">
+                    <h6 class="card-title">Doublefile Viburnum</h6>
+                    <p class="card-description">$67.45 <br>⭐⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+            <div class="card" data-name="latest">
+                <img src="Assets/img/Capture9-removebg-preview.png" alt="card8">
+                <div class="card-content">
+                    <h6 class="card-title">Feather Reed Grass</h6>
+                    <p class="card-description">$20.00 <br>⭐⭐⭐⭐</p>
+                </div>
+
+            </div>
+
+
+        </div><!-- end of products -->
+
+        </div><!-- end of products-align -->
+
+
+    </div><!-- end of product -->
+
+    
 
 
     

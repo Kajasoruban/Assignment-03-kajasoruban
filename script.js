@@ -30,3 +30,79 @@ function menu(){
      
 }
 
+function zoom(element){
+    element.classList.toggle("zoomin");
+}
+//start active in nav
+
+const activef= e =>{
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+
+}
+const act= document.querySelectorAll("#ull a");
+act.forEach(link => link.addEventListener("click", activef));
+
+
+//end active in nav
+
+// start drag scroll
+
+let mouseDown = false;
+let startX, scrollLeft;
+const slider = document.querySelector('.carousels');
+
+const startDragging = (e) => {
+  mouseDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+  
+}
+
+const stopDragging = (e) => {
+  mouseDown = false;
+  
+}
+
+const move = (e) => {
+  e.preventDefault();
+  if(!mouseDown) { return; }
+  const x = e.pageX - slider.offsetLeft;
+  const scroll = x - startX;
+  slider.scrollLeft = scrollLeft - scroll;
+  
+}
+
+// Add the event listeners
+slider.addEventListener('mousemove', move, false);
+slider.addEventListener('mousedown', startDragging, false);
+slider.addEventListener('mouseup', stopDragging, false);
+slider.addEventListener('mouseleave', stopDragging, false);
+
+// end scroll
+
+
+// start of products filter
+
+const filtbuttons =document.querySelectorAll(".product-title button");
+const filtproducts =document.querySelectorAll(".products .card");
+
+
+const filterproduct = e =>{
+  document.querySelector(".active2").classList.remove("active2");
+  e.target.classList.add("active2");
+
+
+  filtproducts.forEach(card => {
+    card.classList.add("hide");
+
+    if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "featured") {
+      card.classList.remove("hide");
+      
+    };
+
+  });
+};
+
+filtbuttons.forEach(button => button.addEventListener("click", filterproduct))
+// end of products filter
