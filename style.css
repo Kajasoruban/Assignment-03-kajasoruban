@@ -30,6 +30,18 @@
 .importand .card img{
     filter: saturate(3);
 }
+
+.importand .faq li{
+    background-color: #131a1a;
+    border: 1px solid #182020;
+    
+}
+.importand .faq .quest{
+    background-color: #131a1a;
+}
+.importand .faq p{
+    background-color: #131a1a;
+}
 /* end mode */
 
 
@@ -49,7 +61,7 @@
     z-index: 100;
 }
 nav{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width:100vw;
     height: 10vh;
     display: flex;
@@ -104,9 +116,8 @@ nav ul{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    /* gap: 4rem; */
     align-items: center;
-    width: 40%;
+    width: 50%;
     /* border: 1px solid black; */
 }
 nav ul li{
@@ -185,7 +196,7 @@ nav ul li{
 .container{
     width: 100vw;
     height: 50vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .carousels{
     width: 80vw;
@@ -195,9 +206,11 @@ nav ul li{
     position: relative;
     cursor: grab;
 }
-
+.carousels:active{
+    cursor: grabbing;
+}
 .carousel{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80vw;
     height: 40vh;
 
@@ -207,7 +220,7 @@ nav ul li{
 
 }
 .carousel div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     height: 100%;
 }
@@ -220,7 +233,7 @@ nav ul li{
     height: 90%;
     min-width: 350px;
     height: 250px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -248,12 +261,17 @@ nav ul li{
     font-weight: bold;
     cursor: pointer;
 }
-
+.content1 button:active{
+    transform: scale(1.03,1.05);
+}
+.content2 button:active{
+    transform: scale(1.05,1.05);
+}
 
 
 /* for 2nd silde section */
 .carousel2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80vw;
     height: 40vh;
     position: absolute;
@@ -266,7 +284,7 @@ nav ul li{
 
 }
 .carousel2 div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     height: 100%;
 }
@@ -279,7 +297,7 @@ nav ul li{
     height: 90%;
     min-width: 300px;
     height: 250px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     position: absolute;
     top: 0;
@@ -396,7 +414,7 @@ nav ul li{
 .space{
     width: 100vw;
     height: 10vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* start of zoomimage */
@@ -404,11 +422,11 @@ nav ul li{
 .container2{
     width: 100vw;
     height: 60vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .zoom{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 80vw;
     height: 100%;
     margin: 0 auto;
@@ -416,7 +434,7 @@ nav ul li{
 }
 
 .zoom div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40vw;
     height: 100%;
 }
@@ -426,7 +444,7 @@ nav ul li{
 .zoomimg img{
     width: 80%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     cursor: zoom-in;
     
 }
@@ -509,16 +527,16 @@ nav ul li{
 .container3{
     width: 100vw;
     
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .product-align{
     width: 80vw;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .product-title{
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .product-title h1{
@@ -545,6 +563,7 @@ nav ul li{
     background-color: white;
     color: #383a37;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .active2{
@@ -562,7 +581,7 @@ nav ul li{
 }
 .card{
     flex-basis: 200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     
 }
@@ -571,11 +590,11 @@ nav ul li{
     
     width: 100%;
     height: 70%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-.card-content{
+/* .card-content{
     border: 1px solid black;
-}
+} */
 .card-content h6{
     font-size: 1rem;
     margin-bottom: 5px;
@@ -599,3 +618,229 @@ nav ul li{
 
 }
 /* end of product */
+
+
+/* <!-- start of faqs-section --> */
+
+.container4{
+    width: 100vw;
+    /* border: 1px solid black; */
+       
+}
+
+.container4 .faqs-section{
+    width: 80vw;
+
+    margin: 0 auto;
+    
+}
+
+.faqs-section ul{
+    list-style-type: none;
+    margin-top: 2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.faqs-section ul li{
+    border: 1px solid rgb(219, 207, 207);
+    background: #eee9e9;
+    width:30vw;
+    overflow: hidden;
+}
+
+.answ p{
+      display: none;
+    
+}
+
+
+
+.active3 p{
+    display: inline-block ;
+}
+
+.active3 .quest,.answ{
+    background-color: #eee9e9;
+    /* color: white; */
+    font-weight: 500;
+    
+}
+
+.quest{
+    width:30vw;
+    height: 2rem;
+    /* border: 1px solid rgb(0, 0, 0); */
+    text-align: center;
+    cursor: pointer;
+}
+
+.quest span{
+    font-weight: bold;
+    
+}
+
+.active3 .quest span::before{
+    content: "x ";
+}
+
+.quest span::before{
+    content: "+ ";
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .faqs-section h1{
+        text-align: center;
+    }
+    .faqs-section ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+    .faqs-section ul li{
+        width: 50vw;
+    }
+
+    .quest{
+        width: 40vw;
+        height: 3rem;
+        margin:0 auto;
+        
+    }
+    .answ p{
+        text-align: center;
+    }
+    
+
+}
+
+
+/* <!-- end of faqs-section --> */
+
+/* <!-- start of team --> */
+
+.container5{
+    width: 100vw;
+    /* border: 1px solid black; */
+    /* height: 70vh; */
+       
+}
+
+.container5 .teamhead{
+    width: 80vw;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.container5 .teamcards{
+    width: 80vw;
+    /* border: 1px solid black; */
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    /* justify-content: space-between; */
+    /* overflow: hidden; */
+}
+
+.contforteam{
+    overflow: hidden;
+}
+.teamcards .team{
+    flex-basis: auto;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-left: 2rem;
+    position: relative;
+}
+.teamcards .team img{
+    width: 300px;
+    height: 300px;
+}
+
+.container5 .pagination{
+    width: 80vw;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    height: 2rem;
+    position: relative;
+    
+}
+.active4{
+    background-color: #259403 !important;
+    border: 1px solid rgb(6, 51, 0) !important;
+}
+.pagination i{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pagination span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background-color: #61af4a;
+    
+    
+    border: 1px solid rgb(101, 238, 47);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    
+
+}
+
+
+/* <!-- end of team --> */
+
+
+
+/* <!-- start of contact us --> */
+
+.container6{
+    width: 100vw;
+    border: 1px solid black;
+    height: 60vh;
+       
+}
+
+
+
+
+/* <!-- end of contact us --> */
+
+
+
+/* <!-- start of footer --> */
+
+
+.container7{
+    width: 100vw;
+    border: 1px solid black;
+       
+}
+
+footer{
+    margin: 0 auto;
+    width: 80vw;
+    border: 1px solid black;
+    height: 40vh;
+}
+
+
+
+
+
+/* <!-- end of footer --> */

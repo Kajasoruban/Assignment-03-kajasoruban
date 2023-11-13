@@ -106,3 +106,56 @@ const filterproduct = e =>{
 
 filtbuttons.forEach(button => button.addEventListener("click", filterproduct))
 // end of products filter
+
+// start of faqsection
+
+const faqsec = document.querySelectorAll(".faqs-section li");
+
+
+// const faqs =(q)=>{
+//    q.classList.toggle("active3")
+// }
+
+// faqsec.forEach(q => q.addEventListener("click",faqs(e)))
+
+
+faqsec.forEach(faqs =>{
+  faqs.addEventListener("click", () =>{
+    faqs.classList.toggle("active3");
+  })
+});
+
+
+// end of faqsection
+
+
+// start of team 
+
+var butn = document.getElementsByClassName("butn");
+var teams =document.getElementById("teamcardsid");
+
+butn[0].onclick = function(){
+  teams.style.transform="translateX(0px)";
+  for(i=0;i<3;i++){
+    butn[i].classList.remove("active4");
+  }
+  this.classList.add("active4");
+}
+butn[1].onclick = function(){
+  teams.style.transform="translateX(-750px)";
+  for(i=0;i<3;i++){
+    butn[i].classList.remove("active4");
+  }
+  this.classList.add("active4");
+}
+butn[2].onclick = function(){
+  teams.style.transform="translateX(-1100px)";
+  for(i=0;i<3;i++){
+    butn[i].classList.remove("active4");
+  }
+  this.classList.add("active4");
+}
+
+
+
+// end of team 
