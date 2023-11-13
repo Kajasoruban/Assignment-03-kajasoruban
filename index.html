@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Assets/img/Icons/favicon.png" type="image/x-icon">
+    <title>nature</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="bodyc">
@@ -17,19 +18,19 @@
         <span><i id="logo"><img src="Assets/img/Icons/favicon.png" id="logofun" class="logocol" alt="logo"></i>PLANTEX</span>
             <i><img src="Assets/img/Icons/menu.svg" id="menu"alt="" onclick="menu()"></i>
             <ul id="ull">
-                <li><a id="linkc" class="active" href="">Home</a></li>
+                <li><a id="linkc" class="active" href="#home">Home</a></li>
                 <li><a href="#aboutlink">About</a></li>
                 <li><a href="#productlink">Products</a></li>
                 <li><a href="#faqlink">FAQs</a></li>
                 <li><a href="#teamlink">Team</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#contactlink">Contact Us</a></li>
                 <li><i><img src="Assets/img/Icons/moon(dark).svg" onclick="modeChange(this.src)" id="mode" alt=""></i></li>
             </ul>
 
        </nav>
     </section>
 
-    <div >
+    <div id="home">
         <p id="blank"></p>
         
     </div>
@@ -352,7 +353,7 @@
             </div>
 
             <div class="team">
-                <img src="Assets/img/team3.png" alt="team">
+                <img src="Assets/img/Mr-Bean-Pictures-1.jpg" alt="team">
                 <span>team3</span>
 
 
@@ -401,10 +402,42 @@
     <!-- start of contact us -->
     <div class="container6">
 
+        <div class="contactsect"><!-- start of contactsect -->
+
+            <div class="cont">
+
+            </div>
+
+            <div class="contform">
+                <form action="">
+                    <span>
+                    <input type="text" id="fname"  placeholder="First Name*">
+
+                    <input type="text" id="lname" placeholder="Last Name*">
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <span>
+                    <input type="number" id="phnum" placeholder="Phone*">
+                    
+                    <input type="email" id="email" placeholder="Email*">
+                    </span>
+                    <br>
+                    
+                    <textarea id="message" name="subject" placeholder="Message" ></textarea>
+                     <br><br>
+                    <button>POST COMMENT</button>
+                  </form>
+                
+            
+            </div>
 
 
 
+        </div><!-- end of contactsect -->
 
+        <div id="map"></div>
 
     </div><!-- end of contact us div -->
 
@@ -420,11 +453,68 @@
         <footer>
 
             <div class="footerdetails">
+                <div><!--first-->
+                    <span><i><img src="Assets/img/Icons/favicon2.png" alt=""></i>PLANTEX</span>
+                    <br>
+                    <br>
+                    
+                    <h3>Subscribe to our newsletter <br> to stay update</h3>
+                    <br>
+                    
+                    <form action="">
+                        <input type="email" placeholder="Enter your email"size="15" ><button>Subscribe ➚</button>
+                    </form>
+
+                
+                </div>
+                
+                
+                
+                <div><!--secoond-->
+
+                    <h3 class="addresst">Our Address</h3>
+                    <br><br>
+
+                    <address>
+                        1234 - Peru <br><br>
+                        La libertad-43210 <br><br>
+                        123-456-789
+                    </address>
+
+
+                </div>
+
+                <div><!--third-->
+                    <h3 class="addresst">Contact Us</h3>
+                    <br>
+                    <p>+999 888 77</p>
+                    <br>
+                    <span><img src="Assets/img/Icons/facebook-logo.png" alt=""></span>
+                    <span><img src="Assets/img/Icons/instagram-logo.png" alt=""></span>
+                    <span><img src="Assets/img/Icons/twitter-logo.png" alt=""></span>
+
+
+                </div>
+
+                <div><!--fourth-->
+                    <h3 class="addresst">We accept all  <br>credit cards</h3>
+
+                    <br>
+
+                    <span><img src="Assets/img/card1.png" alt=""></span>
+                    <span><img src="Assets/img/card2.png" alt=""></span>
+                    <span><img src="Assets/img/card3.png" alt=""></span>
+                    <span><img src="Assets/img/card4.png" alt=""></span>
+
+                </div>
+                
 
 
             </div>
 
             <div class="footercopyrights">
+
+                <p> © Kajan. All rights reserved</p>
 
                 
             </div>
@@ -435,23 +525,10 @@
     </div><!-- end of footer div -->
 
     <!-- end of footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.1527771175665!2d80.02213937351517!3d9.667984578662793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe541def2532f1%3A0xa96bea17c26decf1!2sUki%20Coding%20School%20-%20Jaffna%20Center!5e0!3m2!1sen!2sus!4v1699798858974!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     
-
+   
     <script src="script.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUZ61A_lK8Em8_DQ6kSlGzX-SDBK1lEKg&callback=initMap"></script>
     
 </body>
 </html>

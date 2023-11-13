@@ -157,5 +157,15 @@ butn[2].onclick = function(){
 }
 
 
+// for map
+function initMap() {
+  var options= {
+    zoom:17,
+    center:{lat:9.817072,lng:80.243698}
+  }
+  var googlemap = new google.maps.Map(document.getElementById("map"), options);
+}
 
 // end of team 
+
+

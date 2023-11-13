@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+    font-size: 20px;
 }
 
 /* mode start */
@@ -229,17 +229,17 @@ nav ul li{
 }
 
 .image1 img{
-    width: 50%;
-    height: 90%;
+    width: 30vw;
+    /* height: 90%; */
     min-width: 350px;
-    height: 250px;
+    height: 350px;
     /* border: 1px solid black; */
     margin: 0 auto;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-     
+   
 }
 
 .content1 h1{
@@ -296,7 +296,7 @@ nav ul li{
     width: 70%;
     height: 90%;
     min-width: 300px;
-    height: 250px;
+    height: 350px;
     /* border: 1px solid black; */
     margin: 0 auto;
     position: absolute;
@@ -436,23 +436,24 @@ nav ul li{
 .zoom div{
     /* border: 1px solid black; */
     width: 40vw;
-    height: 100%;
+    height: 50vh;
 }
 .zoomimg{
     overflow: hidden;
+    /* border: 1px solid black; */
 }
 .zoomimg img{
-    width: 80%;
-    height: 100%;
+    width: 30vw;
+    height: 50vh;
     /* border: 1px solid black; */
     cursor: zoom-in;
     
 }
 .zoomin{
-    min-width: 700px;
-    min-height: 400px;
-    object-fit: none;
-    object-position: -5rem -10rem;
+    min-width: 600px;
+    min-height: 600px;
+    object-fit: cover;
+    /* object-position: ; */
     cursor: zoom-out !important;
 }
 
@@ -580,7 +581,7 @@ nav ul li{
     flex-wrap: wrap;
 }
 .card{
-    flex-basis: 200px;
+    flex-basis: 300px;
     /* border: 1px solid black; */
     margin: 0 auto;
     
@@ -812,12 +813,67 @@ nav ul li{
 .container6{
     width: 100vw;
     border: 1px solid black;
-    height: 60vh;
+    
        
 }
 
+#map{
+    border: 1px solid black;
+    width: 100vw;
+    height: 30vh;
+}
 
+.contactsect{
+    border: 1px solid black;
+    width: 60vw;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    
+}
 
+.contactsect .cont{
+    border: 1px solid rgb(199, 8, 8);
+    width: 20vw;
+    height: 50vh;
+}
+.contactsect .contform{
+    border: 1px solid rgb(174, 43, 13);
+    width: 40vw;
+    height: 50vh;
+    
+}
+
+.contform input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.contform form{
+    /* border: 3px solid rgb(52, 185, 3); */
+    width: 35vw;
+    height: 40vh;
+    margin: 2rem auto auto auto;
+}
+.contform form button{
+    margin-left: 20rem;
+    border: none;
+    background-color: green;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.contform span input{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.contform textarea{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    height:20vh;
+    width: 30vw;
+    border: none;
+    border-bottom: 1px solid black;
+}
 
 /* <!-- end of contact us --> */
 
@@ -828,19 +884,80 @@ nav ul li{
 
 .container7{
     width: 100vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
        
 }
 
 footer{
     margin: 0 auto;
     width: 80vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 40vh;
+}
+.footerdetails i img{
+    width: 2rem;
+    display: inline;
+    translate: 0 8px;
+}
+
+.footerdetails span{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.footerdetails div{
+    /* border: 1px solid black; */
+    width: 20vw;
+}
+.footerdetails{
+    /* border: 1px solid black; */
+    width: 80vw;
+    height: 30vh;
+    display: flex;
+}
+
+.footerdetails button{
+    padding: 2px;
+    background: rgb(10, 101, 10);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.footerdetails form{
+    /* border: 1px solid black; */
+    padding: 7px 7px;
+    background: rgb(143, 216, 143);
+}
+.footerdetails form input{
+    background: rgb(143, 216, 143);
+    border: none;
+}
+
+.footerdetails  address{
+    margin-left: 2rem;
+}
+.footerdetails  .addresst{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.footerdetails span img{
+    margin-left: 20px;
+    width: 1.5rem;
 }
 
 
-
+.footercopyrights{
+    /* border: 1px solid black; */
+    width: 80vw;
+    
+}
+.footercopyrights p{
+    text-align: center;
+    width: 25vw;
+    /* border: 1px solid black; */
+    margin: 1rem auto;
+}
 
 
 /* <!-- end of footer --> */
