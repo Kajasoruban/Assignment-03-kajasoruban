@@ -405,27 +405,34 @@
         <div class="contactsect"><!-- start of contactsect -->
 
             <div class="cont">
+                <h2>Contact Info</h2>
+
+                <p>Fill the form and our team will get to back <br> to you within 24 hours</p>
+
+                <span><i><img src="Assets/img/Icons/telephone-phone.png" alt=""></i>123 456 789</span><br>
+                <span><i><img src="Assets/img/Icons/envelope-mail.png" alt=""></i>info@example.com</span><br>
+                <span><i><img src="Assets/img/Icons/location-pin.png" alt=""></i>13, Your Address, Here</span>
 
             </div>
 
             <div class="contform">
                 <form action="">
                     <span>
-                    <input type="text" id="fname"  placeholder="First Name*">
+                    <input type="text" id="fname" pattern="/^[a-zA-Z ]{2,15}$/" placeholder="First Name*">
 
-                    <input type="text" id="lname" placeholder="Last Name*">
+                    <input type="text" id="lname" pattern="/^[a-zA-Z ]{2,15}$/" placeholder="Last Name*">
                     </span>
                     <br>
                     <br>
                     <br>
                     <span>
-                    <input type="number" id="phnum" placeholder="Phone*">
+                    <input type="number" id="phnum" pattern="/^\d{10}$/" placeholder="Phone*">
                     
-                    <input type="email" id="email" placeholder="Email*">
+                    <input type="email" id="email" pattern="/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/" placeholder="Email*">
                     </span>
                     <br>
                     
-                    <textarea id="message" name="subject" placeholder="Message" ></textarea>
+                    <textarea id="message" data-pattern="/{2,120}/" placeholder="Message" ></textarea>
                      <br><br>
                     <button>POST COMMENT</button>
                   </form>
