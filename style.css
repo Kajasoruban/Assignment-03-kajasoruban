@@ -818,30 +818,42 @@ nav ul li{
 }
 
 #map{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100vw;
     height: 30vh;
 }
 
 .contactsect{
-    border: 1px solid black;
+    border: 2px solid rgb(96, 179, 57);
     width: 60vw;
     height: 50vh;
     margin: 0 auto;
     display: flex;
     
 }
+.cont span i img{
+    margin-right: 10px;
+    width: 1.5rem;
 
+}
+.importand .cont span i img{
+    filter: invert();
+
+}
 .contactsect .cont{
-    border: 1px solid rgb(199, 8, 8);
+    /* border: 1px solid rgb(199, 8, 8); */
     width: 20vw;
     height: 50vh;
 }
 .contactsect .contform{
-    border: 1px solid rgb(174, 43, 13);
+    border: 2px solid rgb(96, 179, 57);
     width: 40vw;
     height: 50vh;
     
+}
+.importand .contform input{
+    background-color: #0f1313;
+    border-bottom: 1px solid rgb(253, 252, 252);
 }
 
 .contform input{
@@ -873,6 +885,9 @@ nav ul li{
     width: 30vw;
     border: none;
     border-bottom: 1px solid black;
+}
+.importand .contform textarea{
+    background-color: #0f1313;
 }
 
 /* <!-- end of contact us --> */
@@ -945,8 +960,15 @@ footer{
     margin-left: 20px;
     width: 1.5rem;
 }
-
-
+.importand .inv{
+    filter: invert();
+}
+.vert{
+    filter: invert();
+}
+.importand .vert{
+    filter: invert(0);
+}
 .footercopyrights{
     /* border: 1px solid black; */
     width: 80vw;
